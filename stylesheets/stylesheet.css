@@ -1,0 +1,131 @@
+
+/*Site Wide*/
+
+body {
+    margin: 0;
+    margin-top: 60px;                                               /*FOR HEADER*/
+    font-family: 'Montserrat', sans-serif;                          /*Most widely used font*/
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif !important;               /*H1 only uses montserrat, if you need otherwise, use an !important flag*/
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.onecolp {                                                          /*One Collumn Paragraph Preset (is responsive)*/
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    color: #333;
+}
+
+.img {
+    width: 33%;
+    float: left;
+}
+
+/*Navigation*/
+
+.nav {                                                              /*Navigation Bar*/
+    background: #5190DB;
+    box-shadow: 0px .5px 1px 1px rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+    border: none;
+    z-index: 1000000;
+    display: block;
+    text-align: center;
+}
+.pbusters {
+    background: #371672 !important;
+}
+
+.button {                                                           /*Navigation Button*/
+    height: 100%;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: -5px;
+    transition: background .2s, color .2s;
+}
+.button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.links {
+    float: right;
+    display: inline-block;
+}
+
+/*------------------------------------*/
+
+
+/*FOOTER*/
+
+.footer {
+    clear: both;
+    position: relative;
+    background: #ddd;
+    color: white;
+    z-index: 1000;
+    margin: 0;
+    margin-top: 27.5px;
+    display: table;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    color: #888;
+    font-size: 14px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.footer-iframe {
+    border: none;
+    width: 100%;
+    height: 91px;
+    margin: 0;
+    margin-bottom: -4px;
+}
+
+/*MOBILE*/                                                          /*Media Queries for Responsive Styling*/
+
+@media all and (max-width: 660px){
+    
+    .footer p {
+        font-size: 10px;
+    }
+    .onecolp {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .button {
+        padding: 0 10px 0 10px;
+        font-size: 15px;
+    }
+    .nav > h1 {
+        display: none;
+    }
+    
+    .links {
+        float: none;
+    }
+}

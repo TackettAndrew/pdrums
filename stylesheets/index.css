@@ -1,0 +1,39 @@
+.banner {
+    background-color: white;
+    /*background-image: url("../UI/frame-bg-3.png");*/
+    background-size: auto 100%;
+    height: auto;
+    width: 100%;
+}
+
+/*welcome*/
+
+.welcome {
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.welcomeIMG {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pbustersIMG {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*MOBILE*/
+
+@media all and (max-width: 660px){
+    .welcomeTXT {
+        width: 90%;
+        margin: 5%;
+    }
+}

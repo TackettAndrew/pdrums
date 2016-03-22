@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <!--THE NAV-->
+        <div class="nav">
+            <h1 style="color: white; float: left; line-height: 60px; margin-right: 2%; margin-left: 1%; font-size: 23px;">POISONED DRUMS</h1>
+            <div  class="links">
+                <a href="index.html" class="button" target="_parent">Home</a>
+                <a href="pbusters.html" class="button" target="_parent">Planet Busters</a>
+            </div>
+        </div>
+        <!--THE CONTENT-->
+        <div class="welcome infoblock-white">
+            <span class="welcomeIMG"><img src="images/pdrums.png"></span>
+        </div>
+        <iframe class="footer-iframe" src="iframes/footer.html"></iframe>
+        <script>
+            window.addEventListener("load", ibw, false);
+            var windowHeight = "";
+            function ibw() {
+                windowHeight = window.innerHeight;
+                var ibws = document.getElementsByClassName("infoblock-white");
+                for(var i = 0; i < ibws.length; i++) {
+                    var ibw = ibws[i];
+                    var h = ibw.style.height = (windowHeight - 60 - 91).toString() + "px";
+                    var h = ibw.style.maxHeight = (windowHeight - 60 - 91).toString() + "px";
+                    console.log(windowHeight);
+                };
+            }
+        </script>
+    </body>
+</html>

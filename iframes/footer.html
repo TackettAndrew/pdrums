@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        
+        <script>
+            window.addEventListener("load", time, false);
+            function time() {
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("date").innerHTML = "Art, Design, and Content ©"+"2015-"+year+" Andrew Tackett | All Rights Reserved<br>All other copyrights are the property of their respective owners.";
+            }
+        </script>
+        <style>
+            body {
+                margin: 0 !important;
+                max-height: 91px;
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="footer">
+        <!--p class="footerp" id="date"></p><br-->
+        <p id="date"></p>
+        </div>
+    </body>
+</html>
